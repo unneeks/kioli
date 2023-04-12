@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import './style.css';
+import Header from './Header';
+import Welcome from './Welcome';
+import GettingStarted from './GettingStarted';
+import TryoutUI from './TryoutUI';
 
 function App() {
+  const [activeTab, setActiveTab] = useState('welcome');
+
+  function handleTabClick(event, newValue) {
+    setActiveTab(newValue);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header activeTab={activeTab} handleTabClick={handleTabClick} />
+      {activeTab === 'welcome' && <Welcome />}
+      {activeTab === 'getting-started' && <GettingStarted />}
+      {activeTab === 'tryoutui' && <TryoutUI />}
     </div>
   );
 }
