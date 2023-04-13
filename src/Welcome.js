@@ -3,8 +3,10 @@ import React from 'react';
 function Welcome() {
   return (
     <div id="welcome">
-      <h2>Welcome to ML Docs API</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id lorem et elit feugiat pulvinar. Integer luctus magna non sapien pharetra, a lacinia velit bibendum. Praesent nec sagittis libero.</p>
+      <h2>  Doc xTract Services Overview </h2>
+      <p> A comprehensive set of api's and tools which can classify documents related to customers as well extract entities .</p>
+      <p> Our models are trained extensively with in hou.  If you business processes require information</p>
+
     </div>
   );
 }

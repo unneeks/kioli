@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import classifyDocument from "./DocumentClassification";
+import classifyDocument from "./classifyDocument";
 import submitForExtraction from "./SubmitForExtraction";
 import TryoutUI from "../TryoutUI";
 
