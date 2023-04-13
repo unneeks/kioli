@@ -23,7 +23,7 @@ function Header(props) {
       <AppBar position="static">
         <Toolbar>
           <Typography variant="h6" className={classes.title}>
-           ML Docs API
+            Doc xTract Services
           </Typography>
           <Tabs value={props.activeTab} onChange={props.handleTabClick}>
             <Tab value="welcome" label="Welcome" />
